@@ -34,6 +34,27 @@ Nodejs Movie Api
 | /register | `POST` | { username: 'foo', password:'1234' } | Create a new user. |
 | /authenticate | `POST` | { username: 'foo', password:'1234' } | Generate a token. |
 
+## MongoDB Collections
+
+MongoDB collection design for Application
+
+|     id    |  title | imdb_score | category | country |  year  | date |
+|-----------|--------|------------|----------|---------|--------|------|
+|ObjectId []| String |   Number   |  String  |  String | Number | Date |
+
+## Json Type
+Json type for collection
+{
+	id : ObjectId [],
+	"title" : String,
+    "imdb_score" : Number,
+    "category" : String,
+    "country" : String,
+    "year" : Number,
+    "date" : Date
+}
+
+
 # Demo
 
 Demo will be coming soon... 
