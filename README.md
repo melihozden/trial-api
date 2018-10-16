@@ -43,16 +43,17 @@ MongoDB collection design for Application
 |ObjectId []| String |   Number   |  String  |  String | Number | Date |
 
 ## Json Type
-Json type for collection
-{
-	id : ObjectId [],
-	"title" : String,
-    "imdb_score" : Number,
-    "category" : String,
-    "country" : String,
-    "year" : Number,
-    "date" : Date
-}
+Json type for collection :
+ - `{
+id : ObjectId [],
+"title" : String,
+"imdb_score" : Number,
+"category" : String,
+"country" : String,
+"year" : Number,
+"date" : Date
+}`
+
 
 
 # Demo
