@@ -1,5 +1,3 @@
-
-
 # Udemy Node Instruction
 
 Nodejs Movie Api 
@@ -54,8 +52,6 @@ id : ObjectId [],
 "date" : Date
 }`
 
-
-
 # Demo
 
-Demo will be coming soon... 
+Coming soon...
