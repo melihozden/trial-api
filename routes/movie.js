@@ -20,11 +20,12 @@ const promise = Movie.find({ });
   });
 });
 
-router.get('/:movie_id',(req,res)=>{
+router.get('/:movie_id',(req,res,next)=>{
 
   const promise = Movie.findById(req.params.movie_id) ;
-  promise.then((data)=>{
-    res.json(data) ;
+  promise.then((movie)=>{
+    if(!movie) next({ message: 'Movie was not found in system.',code: 1})
+    res.json(movie) ;
   }).catch((err)=>{
     res.json(err);
   });
@@ -33,6 +34,23 @@ router.get('/:movie_id',(req,res)=>{
   //   Movie.findById(req.params.movie_id,(err,data)=>{
 //     res.json(data);
 // });
+});
+
+
+router.put('/:movie_id',(req,res,next)=>{
+
+  const promise = Movie.findByIdAndUpdate(
+    req.params.movie_id,
+    req.body,
+    {
+      new : true
+    }
+    ) ;
+  promise.then((movie)=>{
+    res.json(movie) ;
+  }).catch((err)=>{
+    res.json(err);
+  });
 });
 
 router.post('/', function(req, res, next) {

@@ -34,16 +34,15 @@ Nodejs Movie Api
 | /register | `POST` | { username: 'foo', password:'1234' } | Create a new user. |
 | /authenticate | `POST` | { username: 'foo', password:'1234' } | Generate a token. |
 
-## MongoDB Collections
+## MongoDB Movies Collection
 
-MongoDB collection design for Application
+MongoDB collection design of movie 
 
 |     id    |  title | imdb_score | category | country |  year  | date |
 |-----------|--------|------------|----------|---------|--------|------|
 |ObjectId []| String |   Number   |  String  |  String | Number | Date |
 
-## Json Type
-Json type for collection :
+## Json Type of Movies Collection Types
  - `{
 id : ObjectId [],
 "title" : String,
@@ -54,6 +53,22 @@ id : ObjectId [],
 "date" : Date
 }`
 
+## MongoDB Directors Collection Types
+
+MongoDB collection design of director 
+
+|     id    |  name  |   surname  |    bio   |   date  |
+|-----------|--------|------------|----------|---------|
+|ObjectId []| String |   Number   |  String  |  String | 
+
+## Json type for Director collection :
+ - `{
+id : ObjectId [],
+"name" : String,
+"surname" : Number,
+"bio" : String,
+"date" : Date
+}`
 
 
 # Demo
