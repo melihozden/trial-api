@@ -50,8 +50,6 @@ id : ObjectId [],
 "year" : Number,
 "date" : Date
 }`
-
-<<<<<<< HEAD
 ## MongoDB Directors Collection Types
 
 MongoDB collection design of director 
