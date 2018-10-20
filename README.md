@@ -68,8 +68,6 @@ id : ObjectId [],
 "bio" : String,
 "date" : Date
 }`
-=======
->>>>>>> a02e4509406b6f54008679084481ef713b09fbd9
 # Demo
 
 Coming soon...
