@@ -1,6 +1,4 @@
-
-
-# Udemy Node Egitimi
+# Udemy Node Instruction
 
 Nodejs Movie Api 
 
@@ -53,6 +51,7 @@ id : ObjectId [],
 "date" : Date
 }`
 
+<<<<<<< HEAD
 ## MongoDB Directors Collection Types
 
 MongoDB collection design of director 
@@ -69,8 +68,8 @@ id : ObjectId [],
 "bio" : String,
 "date" : Date
 }`
-
-
+=======
+>>>>>>> a02e4509406b6f54008679084481ef713b09fbd9
 # Demo
 
-Demo will be coming soon... 
+Coming soon...
