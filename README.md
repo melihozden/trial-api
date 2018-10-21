@@ -32,7 +32,7 @@ Nodejs Movie Api
 | /register | `POST` | { username: 'foo', password:'1234' } | Create a new user. |
 | /authenticate | `POST` | { username: 'foo', password:'1234' } | Generate a token. |
 
-## MongoDB Movies Collection
+## MongoDB Movies Collection Types
 
 MongoDB collection design of movie 
 
@@ -56,9 +56,9 @@ MongoDB collection design of director
 
 |     id    |  name  |   surname  |    bio   |   date  |
 |-----------|--------|------------|----------|---------|
-|ObjectId []| String |   Number   |  String  |  String | 
+|ObjectId []| String |   Number   |  String  |   Date  | 
 
-## Json type for Director collection :
+## Json type of Director Collection Types :
  - `{
 id : ObjectId [],
 "name" : String,
