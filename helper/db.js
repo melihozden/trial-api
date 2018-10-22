@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 module.exports = () =>{
-    mongoose.connect("mongodb://melihozden:12345abc@ds233763.mlab.com:33763/movie-api",{useNewUrlParser:true})
+    mongoose.connect("mongodb://<username>:<password>@ds233763.mlab.com:33763/movie-api",{useNewUrlParser:true})
 
 mongoose.connection.on('open',()=>{
     console.log("Mongodb status : On")
