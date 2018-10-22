@@ -54,7 +54,7 @@ id : ObjectId [],
 
 MongoDB collection design of director 
 
-|     id    |  name  |   surname  |    bio   |   date  |
+|     id    |  name  |   surname  |    bio   |createdAt|
 |-----------|--------|------------|----------|---------|
 |ObjectId []| String |   Number   |  String  |   Date  | 
 
