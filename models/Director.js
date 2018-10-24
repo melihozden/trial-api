@@ -2,9 +2,22 @@ const mongoose = require('mongoose') ;
 const Schema = mongoose.Schema ;
 
 const DirectorSchema = new Schema({
-    name: String,
-    surname :String,
-    bio : String,
+    name: {
+        type : String ,
+        maxlength: 30,
+        minlength : 2 ,
+        required : [true,'{PATH} is required'] 
+    },
+    surname :{
+        type: String,
+        maxlength : 30,
+        minlength : 2
+    },
+    bio : {
+        type : String,
+        maxlength: 1000,
+        minlength : 10
+    },
     createdAt : {
         type : Date,
         default : Date.now

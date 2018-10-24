@@ -7,11 +7,25 @@ const MovieSchema = new Schema({
     director_id : Schema.Types.ObjectId,
     title : {
         type : String,
-        required : true
+        required : [true,'{PATH} is required.'],
+        maxlength : [15,'`{PATH}` area must have under {MAXLENGTH}'],
+        minlength : [4,'`{PATH}` area must have over {MINLENGTH}'],
     },
-    category : String,
-    country : String,
-    year : Number,
+    category : {
+        type : String,
+        maxlength : 30,
+        minlength : 4
+    },
+    country : {
+        type : String,
+        maxlength : 30,
+        minlength : 4
+    },
+    year : {
+        type : Number,
+        max:  (new Date()).getFullYear(),
+        min:  1900
+    },
     imdb_score : Number,
     date :{
         type: Date,
