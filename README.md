@@ -58,7 +58,7 @@ MongoDB collection design of director
 |-----------|--------|------------|----------|---------|
 |ObjectId []| String |   Number   |  String  |   Date  | 
 
-## Json type of Director Collection Types :
+## Json type of Director Collection Types
  - `{
 id : ObjectId [],
 "name" : String,
