@@ -68,4 +68,4 @@ id : ObjectId [],
 }`
 # Demo
 
-Coming soon with heroku... 
+Coming soon with heroku deployment... Stay tuned.. 
